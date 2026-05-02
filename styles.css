@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     min-height: 200vh;
-    /* Твой темный градиент с синим верхом */
     background: linear-gradient(to bottom, #001a33 0%, #1a1a1a 15%, #121212 100%);
     display: flex;
     flex-direction: column;
@@ -12,37 +11,43 @@ body {
 
 /* Шапка сайта */
 .site-header {
-    height: 350px; /* Сделал побольше, чтобы заголовок не жался к верху */
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* Серая полоска снизу, чтобы отделить заголовок */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
 }
 
-/* Контейнер для центрирования текста над кнопкой */
+/* Контейнер для текста и кнопки */
 .header-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px; /* Расстояние между CarShop и кнопкой */
+    gap: 30px;
 }
 
-/* Фиолетово-синий градиент на тексте */
+/* Текст с градиентом */
 .logo-text {
-    font-size: 60px; /* Сделал еще крупнее */
+    font-size: 60px;
     font-weight: 900;
     text-transform: uppercase;
     margin: 0;
     letter-spacing: 2px;
-    /* Магия градиента */
     background: linear-gradient(to right, #2980b9, #8e44ad);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
 }
 
-/* Основной блок */
+/* Основной блок (Галерея) */
 .site-main {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    /* Здесь тоже можно добавить легкую границу, если хочешь видеть зону */
+    background: rgba(255, 255, 255, 0.02); 
 }
 
 /* Подвал */
@@ -54,9 +59,11 @@ body {
     background: #0a0a0a;
     color: #444;
     font-size: 14px;
+    /* Серая полоска сверху подвала */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Твоя исправленная кнопка */
+/* Кнопка */
 .Button1 {
     width: 180px;
     height: 55px;
@@ -71,8 +78,6 @@ body {
     transition: 0.3s ease;
 }
 
-/* Эффект нажатия (Scale) */
 .Button1:active {
     transform: scale(0.9);
-    box-shadow: 0px 0px 5px rgba(52, 152, 219, 0.8);
 }
