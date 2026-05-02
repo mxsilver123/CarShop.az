@@ -15,12 +15,43 @@ body {
 
 /* Отдел заголовка */
 .site-header {
-    height: 100px;
+/* Центрируем всё содержимое шапки */
+.site-header {
+    height: 250px; /* Увеличил высоту, чтобы было просторнее */
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.2); /* Легкое затемнение верха */
-    color: white;
+    background: transparent;
+}
+
+/* Контейнер, который ставит текст над кнопкой */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Расстояние между текстом и кнопкой */
+}
+
+/* Тот самый фиолетово-синий градиентный текст */
+.logo-text {
+    font-size: 48px; /* Увеличил размер */
+    font-weight: bold;
+    text-transform: uppercase;
+    /* Градиент от глубоко синего к фиолетовому */
+    background: linear-gradient(to right, #001a33, #8e44ad); 
+    -webkit-background-clip: text; /* Обрезает фон по форме букв */
+    -webkit-text-fill-color: transparent; /* Делает сами буквы прозрачными, чтобы был виден фон-градиент */
+    margin: 0;
+}
+
+/* Твоя кнопка (добавь эти строчки к .Button1) */
+.Button1 {
+    width: 180px;
+    height: 55px;
+    /* ... остальные твои настройки (shadow, radius) ... */
+    cursor: pointer;
+}
+    
 }
 
 /* Основная часть (Галерея) */
