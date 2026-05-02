@@ -42,17 +42,14 @@ body {
 
 /* Твоя легендарная кнопка */
 .Button1 {
-    padding: 15px 30px;
-    font-size: 20px;
-    border-radius: 150px;
-    color: black;
-    border: none;
-    background-color: white;
-    box-shadow: 0px 0px 20px 5px rgba(52, 152, 219, 0.7);
-    transition: 0.2s;
-    cursor: pointer;
-}
-
+  .Button1 {
+    width: 160px;       /* Фиксированная ширина — теперь она не растянется */
+    height: 60px;      /* Высота, чтобы была почти квадратной, но чуть длинной */
+    padding: 0;         /* Убираем внутренние отступы, так как задали размер выше */
+    margin-top: 20px;   /* Опускаем чуть ниже от самого верха */
+    /* Остальное (border-radius, shadow) оставляй как было */
+  }
+    
 .Button1:active {
     transform: scale(0.9);
 }
