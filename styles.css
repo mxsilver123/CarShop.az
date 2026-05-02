@@ -45,13 +45,18 @@ body {
 
 /* Твоя легендарная кнопка */
 .Button1 {
-  .Button1 {
-    width: 160px;       /* Фиксированная ширина — теперь она не растянется */
-    height: 60px;      /* Высота, чтобы была почти квадратной, но чуть длинной */
-    padding: 0;         /* Убираем внутренние отступы, так как задали размер выше */
-    margin-top: 20px;   /* Опускаем чуть ниже от самого верха */
-    /* Остальное (border-radius, shadow) оставляй как было */
-  }
+    width: 180px;      /* Ширина */
+    height: 55px;      /* Высота */
+    font-size: 18px;
+    border-radius: 12px; /* Уменьшил скругление, чтобы была "почти квадратной" */
+    background-color: white;
+    color: black;
+    border: none;
+    box-shadow: 0px 0px 15px rgba(52, 152, 219, 0.5); /* Синее свечение потише */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
     
 .Button1:active {
     transform: scale(0.9);
